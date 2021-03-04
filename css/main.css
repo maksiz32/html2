@@ -65,29 +65,33 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.product div {
   padding: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .product-text-h2 {
   font-size: 30px;
   line-height: 36px;
   font-weight: 400;
-  margin-top: 0;
-  padding-bottom: 30px;
+  padding: 0;
+  margin: 0 0 30px 0;
 }
 
 .product-text p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  margin: 0 100px 20px 0;
+}
+
+.product-text p:last-child {
+  margin: 0 100px 0 0;
 }
 
 .description-prod {
   background-color: #f5f5f5;
-  padding: 50px 0 10px 0;
+  padding: 50px 50px 30px 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -98,31 +102,43 @@ main {
   font-weight: 400;
   color: #445161;
   text-align: center;
-  padding-bottom: 30px;
+  margin: 0 0 30px 0;
 }
 
 .description-prod-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 50px;
+  padding: 0;
 }
 
 .description-prod ul {
   list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .description-prod ul li {
-  padding: 0 0 40px 43px;
   background: url("../img/plus.png") 0px 3px no-repeat;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #333333;
+  padding: 0 0 0 43px;
+  margin: 0 20px 20px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 48%;
 }
 
 .screenshots {
-  padding: 50px 40px 30px 40px;
+  padding: 50px 50px 30px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #445161;
 }
 
@@ -131,7 +147,7 @@ main {
   font-size: 30px;
   line-height: 36px;
   font-weight: 400;
-  padding-bottom: 30px;
+  margin: 0 0 30px 0;
 }
 
 .screenshots-figure-group {
@@ -140,6 +156,9 @@ main {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .screenshots-figure-group figure {
@@ -165,18 +184,19 @@ main {
 }
 
 .screenshots-figure-group-img {
-  padding: 5px 0;
+  padding: 0;
 }
 
 .screenshots-figure-group figcaption {
-  padding: 0 0 0 15px;
+  padding: 0;
+  margin: 0 0 0 15px;
 }
 
 .screenshots-figure-group h3 {
   font-size: 24px;
   line-height: 30px;
   font-weight: 400;
-  padding-bottom: 12px;
+  margin: 0 0 12px 0;
 }
 
 .screenshots-figure-group p {
