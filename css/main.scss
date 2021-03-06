@@ -191,14 +191,28 @@ main {
     justify-content: space-between;
 }
 
+.review h2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #445161;
+    display: block;
+    width: 100%;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
 .rewiew-blocks {
-    width: 48%;
     display: flex;
+    justify-content: space-between;
+    width: 48%;
+    margin: 0 0 20px 0;
+    box-sizing: border-box;
 }
 
 .rewiew-blocks__blockpics {
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
     background-color: #445161;
     border-radius: 50%;
 }
@@ -209,16 +223,107 @@ main {
     font-weight: 400;
     font-style: italic;
     color: #333333;
-    margin: 0 16px 0 16px;
+    width: 80%;
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #c9c7c7;
+    border-radius: 10px;
+    position: relative;
 }
 
-.review h2 {
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 400;
+.rewiew-blocks-p:before {
+    content: "";
+    display: block;
+    border: 13px solid transparent; 
+    border-right: 13px solid #c9c7c7;
+    position: absolute;
+    top: 27px;
+    left: -26px;
+}
+
+.rewiew-blocks-p__author {
+    display: block;
+    margin: 5px 0 0 0;
+    font-weight: bold;
+    font-style: normal;
+    color: gray;
+}
+
+.buy {
+    background-color: #fff;
+    padding: 50px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.buy h2 {
     color: #445161;
     display: block;
     width: 100%;
     margin: 0 0 20px 0;
     text-align: center;
+}
+
+.buy-price { 
+    width: 300px;
+    border: 2px solid #445162;
+    box-sizing: border-box;
+    background-color: #445162;
+    color: #fff;
+    margin: 0 45px 0 0;
+    border-radius: 5px;
+}
+
+.buy-price:last-child() { 
+    margin: 0;
+}
+
+.buy-price-header {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    display: block;
+    padding: 16px;
+    box-sizing: border-box;
+    text-align: center;
+} 
+
+.buy-price-digits {
+    display: block;
+    font-size: 40px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #445162;
+    padding: 18px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff;
+}
+
+.buy-price-list {
+    margin: 0 0 0 18px;
+    padding: 18px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.buy-price-button {
+    display: block;
+    padding: 18px;
+    text-align: center;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #445161;
+    text-transform: uppercase;
 }
