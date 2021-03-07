@@ -389,4 +389,225 @@ main {
   color: #445161;
   text-transform: uppercase;
 }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1280px;
+  background-color: #445161;
+}
+
+.footer-title {
+  display: block;
+  width: 100%;
+  margin: 0 0 30px 0;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+}
+
+.footer_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 500px;
+  margin: 0 46px 0 0;
+}
+
+.footer_form input[type="text"],
+.footer_form input[type="email"],
+.footer_form textarea {
+  width: 100%;
+  height: 40px;
+  margin: 0 0 20px 0;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: #ffffff;
+  outline: none;
+  text-transform: capitalize;
+}
+
+.footer_form input[type="text"]:hover,
+.footer_form input[type="email"]:hover,
+.footer_form textarea:hover {
+  background-color: gray;
+  color: white;
+  border-color: white;
+}
+
+.footer_form input[type="text"]:hover::-webkit-input-placeholder,
+.footer_form input[type="email"]:hover::-webkit-input-placeholder, .footer_form textarea:hover::-webkit-input-placeholder {
+  color: white;
+}
+
+.footer_form input[type="text"]:hover:-ms-input-placeholder,
+.footer_form input[type="email"]:hover:-ms-input-placeholder, .footer_form textarea:hover:-ms-input-placeholder {
+  color: white;
+}
+
+.footer_form input[type="text"]:hover::-ms-input-placeholder,
+.footer_form input[type="email"]:hover::-ms-input-placeholder, .footer_form textarea:hover::-ms-input-placeholder {
+  color: white;
+}
+
+.footer_form input[type="text"]:hover::placeholder,
+.footer_form input[type="email"]:hover::placeholder, .footer_form textarea:hover::placeholder {
+  color: white;
+}
+
+.footer_form textarea {
+  width: 500px;
+  height: 170px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: #ffffff;
+  outline: none;
+}
+
+input[placeholder], textarea[placeholder] {
+  text-overflow: ellipsis;
+  font-family: Arial;
+  color: #445162;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.footer_form input[type="submit"] {
+  border-radius: 5px;
+  background-color: #fff;
+  width: 140px;
+  height: 40px;
+  text-transform: uppercase;
+  font-family: Arial;
+  color: #445162;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  outline: none;
+}
+
+.footer_form input[type="submit"]:hover {
+  background-color: gray;
+  color: white;
+}
+
+.footer_form input[type="submit"]:active {
+  background-color: #fff;
+  color: #445162;
+}
+
+.footer-contacts {
+  width: 240px;
+  color: white;
+}
+
+.footer-contacts a {
+  display: block;
+  text-decoration: none;
+}
+
+.footer-contacts-link {
+  display: block;
+  color: white;
+  margin: 0 0 15px 0;
+  padding: 0 0 0 30px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  position: relative;
+}
+
+.footer-contacts-link::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  color: white;
+}
+
+.footer-contacts-link[href^="skype"]:before {
+  background-image: url("../img/skype_icon.png");
+}
+
+.footer-contacts-link:nth-of-type(2):before {
+  background-image: url("../img/icq_icon.png");
+}
+
+.footer-contacts-link[href^="mailto"]:before {
+  background-image: url("../img/email_icon.png");
+}
+
+.footer-contacts-link[href^="tel:"]:before {
+  background-image: url("../img/phone_icon.png");
+}
+
+.footer-contacts-icons {
+  margin: 35px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.footer-contacts-net {
+  display: block;
+  width: 42px;
+  height: 42px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-size: contain;
+  background-position: center;
+}
+
+.footer-contacts-net:nth-of-type(1) {
+  background-image: url("../img/tweet.png");
+}
+
+.footer-contacts-net:nth-of-type(2) {
+  background-image: url("../img/facebook.png");
+}
+
+.footer-contacts-net:nth-of-type(3) {
+  background-image: url("../img/in.png");
+}
+
+.footer-contacts-net:nth-of-type(4) {
+  background-image: url("../img/google.png");
+}
+
+.footer-contacts-net:nth-of-type(5) {
+  background-image: url("../img/youtube.png");
+}
 /*# sourceMappingURL=main.css.map */
