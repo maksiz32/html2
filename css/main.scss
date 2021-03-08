@@ -49,6 +49,11 @@ body {
     list-style-image: url('../img/check.png');
 }
 
+.topheader-img {
+    object-position: center;
+    object-fit: cover;
+}
+
 main {
     color: #445161;
 }
@@ -210,11 +215,22 @@ main {
     box-sizing: border-box;
 }
 
+.rewiew-area-blocks-img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 .rewiew-blocks__blockpics {
     width: 70px;
     height: 70px;
-    background-color: #445161;
     border-radius: 50%;
+}
+
+.pic4 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: center no-repeat url('../img/6016d8abb458f.jpg');
 }
 
 .rewiew-blocks-p {
@@ -260,6 +276,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
+    background: left no-repeat url('../img/6016d838e1797.jpg'), 100% no-repeat url('../img/6016d89802139.jpg');
 }
 
 .buy h2 {
@@ -326,13 +343,25 @@ main {
     font-weight: 700;
     color: #445161;
     text-transform: uppercase;
+
+    &:hover {
+        color: #fff;
+        background-color: #445161;
+        cursor: pointer;
+        border: 1px solid white;
+        box-sizing: border-box;
+    }
+
+    &:active {
+        color: #445161;
+        background-color:  #fff;
+    }
 }
 
 .footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 1280px;
     background-color: #445161;
 }
   
@@ -340,7 +369,6 @@ main {
     display: block;
     width: 100%;
     margin: 0 0 30px 0;
-    font-family: Arial;
     color:  #ffffff;
     font-size: 30px;
     font-weight: 400;
@@ -396,7 +424,6 @@ main {
   
 input[placeholder], textarea[placeholder] {
     text-overflow:ellipsis;
-    font-family: Arial;
     color:  #445162;
     font-size: 16px;
     font-weight: 400;
@@ -410,7 +437,6 @@ input[placeholder], textarea[placeholder] {
     width: 140px;
     height: 40px;
     text-transform: uppercase;
-    font-family: Arial;
     color:  #445162;
     font-size: 16px;
     font-weight: 700;
@@ -437,6 +463,12 @@ input[placeholder], textarea[placeholder] {
 .footer-contacts a {
     display: block;
     text-decoration: none;
+}
+
+.footer-contacts > a:hover {
+    text-decoration: underline;
+    color: antiquewhite;
+    font-weight: bold;
 }
 
 .footer-contacts-link {
@@ -487,32 +519,51 @@ input[placeholder], textarea[placeholder] {
     justify-content: space-between;
     box-sizing: border-box;
 }
+
+.footer-contacts-icons > a > i:hover {
+    color: blue;
+}
   
 .footer-contacts-net {
     display: block;
     width: 42px;
     height: 42px;
     box-sizing: border-box;
-    background-size: contain;
-    background-position: center;
+    // background-size: contain;
+    // background-position: center;
+    padding: 2px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+
+    & i {
+        font-size: 37px;
+        color:  #445162;
+    }
 }
 
-.footer-contacts-net:nth-of-type(1) {
-    background-image: url('../img/tweet.png');
+.facebook i {
+    font-size: 34px;
+    box-sizing: border-box;
+    padding: 5px 0 0 0;
 }
 
-.footer-contacts-net:nth-of-type(2) {
-    background-image: url('../img/facebook.png');
+.google i, .youtube i {
+    font-size: 28px;
+    padding: 5px;
 }
 
-.footer-contacts-net:nth-of-type(3) {
-    background-image: url('../img/in.png');
-}
-
-.footer-contacts-net:nth-of-type(4) {
-    background-image: url('../img/google.png');
-}
-
-.footer-contacts-net:nth-of-type(5) {
-    background-image: url('../img/youtube.png');
+.bottom-page {
+    background-color: #f5f5f5;
+    margin: 0;
+    min-height: 26px;
+    color:  #445162;
+    text-align: center;
+    padding: 6px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
