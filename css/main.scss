@@ -544,10 +544,17 @@ input[placeholder], textarea[placeholder] {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
+    
+    & a {
+        font-size: 26px;
+        color: #445161;
+        padding: 8px 0 0 0;
+    }
 }
 
-.footer-contacts-icons > a > i:hover {
-    color: blue;
+.footer-contacts-icons > a:hover {
+    color: white;
+    background-color: #445161;
 }
   
 .footer-contacts-net {
@@ -555,28 +562,9 @@ input[placeholder], textarea[placeholder] {
     width: 42px;
     height: 42px;
     box-sizing: border-box;
-    // background-size: contain;
-    // background-position: center;
-    padding: 2px;
     text-align: center;
     border-radius: 50%;
     background-color: white;
-
-    & i {
-        font-size: 37px;
-        color:  #445162;
-    }
-}
-
-.facebook i {
-    font-size: 34px;
-    box-sizing: border-box;
-    padding: 5px 0 0 0;
-}
-
-.google i, .youtube i {
-    font-size: 28px;
-    padding: 5px;
 }
 
 .bottom-page {
