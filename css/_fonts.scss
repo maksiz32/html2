@@ -4,4 +4,16 @@
     font-weight: normal;
     src: url('../fonts/arialmt.woff') format('woff'),
     url('../fonts/ARIALMT.ttf') format('truetype');
-}
+} 
+
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.eot');
+    src: url('../font/fontello.eot?94384810#iefix') format('embedded-opentype'),
+         url('../font/fontello.woff2?94384810') format('woff2'),
+         url('../font/fontello.woff?94384810') format('woff'),
+         url('../font/fontello.ttf?94384810') format('truetype'),
+         url('../font/fontello.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
